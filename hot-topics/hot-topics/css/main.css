@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower');
+
+/*
+COlOR SCHEME
+
+#5F56A8
+#31317F
+#Ef93a4
+
+font-family: 'Cardo', serif;
+font-family: 'Indie Flower', cursive;
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Cardo', serif;
+    line-height: 1.6rem;
+    color: #2c2c2c;
+    background-color: white;
+     font-size:  0.618rem
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Indie Flower', cursive;
+    margin: 10px 0;
+    
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.head1 img {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    max-width: 90em;
+    margin: auto;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    padding: 5px 0;
+    background-color: #5F56A8;
+    font-weight: 600;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.masthead h2 {
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 20px;
+}
+
+.banner {
+    background-image: url(../img/space.jpg);
+    height: 300px;
+    margin-top: 20px;
+    color: white;
+}
+
+.slider .masthead {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.main-content .container .article {
+    margin-top: 25px;
+}
+
+.main-content .container .article h2 {
+    text-align: center;
+}
+
+.main-content .container .article img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content .container .article p {
+    text-align: left;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.form {
+    padding: 0 15px;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.main-content .container .form input[type=text] {
+    width: 100%;
+}
+
+.main-content .container .form input[type=email] {
+    width: 100%;
+}
+
+.main-content .container .form textarea {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.main-content .container .form input[type=submit] {
+    margin-bottom: 10px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 35px 0;
+    background-color: #31317F;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+@media all and (min-width: 35rem) {
+    body {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .masthead h2 {
+        text-align: center;
+        padding-top: 150px;
+        padding-left: 20px;
+    }
+    header {
+        text-align: center;
+    }
+    header img {
+        /* width: 50%;*/
+        height: auto;
+    }
+    nav li {
+        display: inline-block;
+        width: calc(33.33% - 7px);
+        margin: 5px 5px 5px 0;
+        padding: 5px 0;
+    }
+    nav li:last-child {
+        margin: 5px 0;
+    }
+    .main-content .container .article img {
+        width: 40%;
+        height: auto;
+        float: left;
+        margin-right: 15px;
+    }
+    .main-content .container .article p {
+        text-align: left;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .main-content .container .form h1 {
+        text-align: center;
+    }
+    .main-content .container .form input[type=text] {
+        width: 100%;
+        display: block;
+        margin: 5px 0;
+    }
+    .main-content .container .form input[type=email] {
+        width: 100%;
+        display: block;
+        margin: 5px 0;
+    }
+    .main-content .container .form .textforms {
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+    }
+    .main-content .container .form textarea {
+        margin-top: 5px;
+        width: 65%;
+    }
+    .main-content .container .form input[type=submit] {
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 60rem) {
+    body {
+       font-size:  1.618rem;
+        line-height: 1.6;
+    }
+    
+    
+    .main-content .container .article img {
+        width: 40%;
+        height: auto;
+        float: left;
+        margin-right: 15px;
+    }
+    .main-content .container .article p {
+        text-align: left;
+        margin: 10px 0;
+    }
+    .main-content .container .lg-two-col {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+        padding-right: 12px;
+    }
+    .main-content .container .lg-two-col:last-child {
+        margin-right: 0%;
+    }
+    .main-content .container .form h1 {
+        text-align: left;
+    }
+    .navbar clearfix {
+        float: left;
+    }
+    .navbar {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    nav li {
+        width: 20%;
+    }
+    nav {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .head1 img {
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .masthead h2 {
+        text-align: left;
+        padding-top: 150px;
+        padding-left: 20px;
+    }
+    footer p {
+        text-align: left;
+        margin-left: 20px;
+    }
+    footer i {
+        
+        
+    }
+    .main-content .container .article h2 {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .main-content .container .article p {
+        padding-left: 20px;
+    }
+    .main-content .container img {
+        width: 40%;
+    }
+}
